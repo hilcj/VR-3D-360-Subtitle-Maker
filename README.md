@@ -1,6 +1,6 @@
 # VR-3D-360-Subtitle-Maker
 
-Adding subtitles to VR-360 images.
+Adding subtitles to VR-360 images / video.
 
 To work with a VR-360 video, please use ffmpeg to convert video to image sequences, and use the batch mode in the software to add subtitle to each image file, and then compose video back from image files.
 
