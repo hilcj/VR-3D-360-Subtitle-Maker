@@ -4,7 +4,16 @@ Adding subtitles to VR-360 images.
 
 To work with a VR-360 video, please use ffmpeg to convert video to image sequences, and use the batch mode in the software to add subtitle to each image file, and then compose video back from image files.
 
-Please see "Installation"!
+For examples:
+```bash
+ffmpeg -i vr_video.mp4 temp/out%d.png
+```
+and
+```bash
+ffmpeg -i temp/out%d.png out.mp4
+```
+
+To run the software from source code, please see "Installation"!
 
 ## Usage
 
@@ -16,8 +25,6 @@ Please see "Installation"!
 ![AddPatterns.png](/imgs_readme/add_patterns.png?raw=true "AddPatterns")
 
 ## Installation
-
-PS: I haven't packed up the code yet, so you need to manually apply a few commands to compile the code.
 
 The package is coded in python and need a few packages.  To manage things around, I would like to recommend you to work with python anaconda environment https://www.anaconda.com/distribution/
 
