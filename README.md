@@ -19,9 +19,11 @@ The package is coded in python and need a few packages.  To manage things around
 
 After download and install the anaconda latest version,
 
-Step 1: (on windows) open anaconda-navigator, click "Environments" tab, and then click on the triangle near "base" and select "Open Terminal".  (on Linux/mac) Just open a normal terminal.
+### Step 1
+(on windows) open anaconda-navigator, click "Environments" tab, and then click on the triangle near "base" and select "Open Terminal".  (on Linux/mac) Just open a normal terminal.
 
-Step 2: in terminal, type below commands to install the environment.  This may take up to 5 minutes.
+### Step 2
+in terminal, type below commands to install the environment.  This may take up to 5 minutes.
 ```bash
 conda create --name env_for_subtitle_maker python=3.6.2
 conda activate env_for_subtitle_maker
@@ -30,7 +32,8 @@ conda install numpy opencv cython kivy matplotlib -y
 pip install kivy-garden
 garden install matplotlib
 ```
-Step 3: then download the source code (https://github.com/hilcj/VR-3D-360-Subtitle-Maker/archive/v1.0.zip), unzip it.  Then, use the same terminal as the step 2 and type below commands:
+### Step 3
+then download the source code (https://github.com/hilcj/VR-3D-360-Subtitle-Maker/archive/v1.0.zip), unzip it.  Then, use the same terminal as the step 2 and type below commands:
 ```bash
 cd YOUR_UNZIPPED_FOLDER
 python setup.py develop
@@ -47,7 +50,8 @@ python add_patterns.py
 ```
 to start the GUI.
 
-Step 4: to start the GUI in future, just follow step 1 to open a terminal, and type:
+### Step 4
+to start the GUI in future, just follow step 1 to open a terminal, and type:
 ``` bash
 conda activate env_for_subtitle_maker
 cd YOUR_UNZIPPED_FOLDER
