@@ -17,12 +17,11 @@ PS: I haven't packed up the code yet, so you need to manually apply a few comman
 
 The package is coded in python and need a few packages.  To manage things around, I would like to recommend you to work with python anaconda environment https://www.anaconda.com/distribution/
 
-After download and install the anaconda latest version, goto your terminal or cmd interface, and type below commands:
+After download and install the anaconda latest version,
 
-(On windows, you may need to first open the "anaconda navigator", select "environment" tab, and on the list of environment, click the right triangle and select, "open in terminal"）
+Step 1: (on windows) open anaconda-navigator, click "Environments" tab, and then click on the triangle near "base" and select "Open Terminal".  (on Linux/mac) Just open a normal terminal.
 
-(These may takes up to 5 min to execute.)
-
+Step 2: in terminal, type below commands to install the environment.  This may take up to 5 minutes.
 ```bash
 conda create --name env_for_subtitle_maker python=3.6.2
 conda activate env_for_subtitle_maker
@@ -31,24 +30,28 @@ conda install numpy opencv cython kivy matplotlib -y
 pip install kivy-garden
 garden install matplotlib
 ```
-
-Then, clone the git depository and compile the code in the same terminal.
-
+Step 3: then download the source code (https://github.com/hilcj/VR-3D-360-Subtitle-Maker/archive/v1.0.zip), unzip it.  Then, use the same terminal as the step 2 and type below commands:
 ```bash
-# Download
-cd $YOUR_WORKING_FOLDER$
-git clone https://github.com/hilcj/VR-3D-360-Subtitle-Maker/
-cd VR-3D-360-Subtitle-Maker
+cd YOUR_UNZIPPED_FOLDER
+python setup.py develop
+```
+then you are ready to go!
 
-# Compile
-cd implementations
-python setup.py build_ext --inplace
-cp implementations/* .
-cd ..
-
-# Ready to go
+Just type
+``` bash
 python create_subtitles.py
+```
+or
+``` bash
 python add_patterns.py
+```
+to start the GUI.
+
+Step 4: to start the GUI in future, just follow step 1 to open a terminal, and type:
+``` bash
+conda activate env_for_subtitle_maker
+cd YOUR_UNZIPPED_FOLDER
+python create_subtitles.py # or add_patterns.py
 ```
 
 ## Input VR image
