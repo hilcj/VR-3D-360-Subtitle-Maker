@@ -44,7 +44,7 @@ pip install kivy-garden
 garden install matplotlib
 ```
 ### Step 3
-then download the source code (https://github.com/hilcj/VR-3D-360-Subtitle-Maker/archive/v1.0.zip), unzip it.  Then, use the same terminal as the step 2 and type below commands:
+then download the source code (https://github.com/hilcj/VR-3D-360-Subtitle-Maker/archive/v1.1.zip), unzip it.  Then, use the same terminal as the step 2 and type below commands:
 ```bash
 cd YOUR_UNZIPPED_FOLDER
 python setup.py develop
