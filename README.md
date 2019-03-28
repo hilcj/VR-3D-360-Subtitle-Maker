@@ -25,7 +25,7 @@ After download and install the anaconda latest version,
 ### Step 2
 in terminal, type below commands to install the environment.  This may take up to 5 minutes.
 ```bash
-conda create --name env_for_subtitle_maker python=3.6.2
+conda create --name env_for_subtitle_maker python=3.6.2 -y
 conda activate env_for_subtitle_maker
 
 conda install numpy opencv cython kivy matplotlib -y
