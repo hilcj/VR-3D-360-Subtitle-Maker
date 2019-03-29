@@ -1,0 +1,7 @@
+numpy
+matplotlib
+opencv-python
+kivy
+pillow
+pygame
+kivy-garden
