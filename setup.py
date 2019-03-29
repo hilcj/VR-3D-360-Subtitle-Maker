@@ -27,7 +27,7 @@ else:
 
 setup(
   name="vrsubtitlemaker",
-  version="1.0",
+  version="2.0",
   description="Add subtitle to VR video/images.",
   url="http://github.com/hilcj/vrsubtitlemaker",
   author="hilcj",
